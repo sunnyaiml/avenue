@@ -1,0 +1,199 @@
+body.loaded #loading-screen {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/pikaso_reimagine.jpeg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+}
+
+.hidden {
+    display: none; 
+}
+
+.loading{
+    position: fixed;
+    top: 22rem;
+    left: 9rem;
+    right: 0;
+    bottom: 0;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: aqua;
+    border-style: dotted;
+    border-width: 1rem;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 1000; 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    animation: rotate 2s linear infinite;
+}
+.loading.show {
+    opacity: 1;
+}
+
+    div#main-content .hidden {
+        display: none; 
+    }
+
+  div#icon {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+  
+    div#buttom {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        margin: 3px;
+        display: flex;
+        height: 14vh;
+        width: 47vw;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    div#icon img {
+        margin-top: 1vh;
+        height: 9%;
+        width: 10REM;
+        FONT-WEIGHT: 600;
+    }
+
+    div#icon h2, h4{
+        font-weight: 600;
+        margin: 1px;
+    }
+    div#icon h4{ 
+        color: rgb(202, 197, 197);
+    }
+
+    div#social img{
+        height: 5rem;
+        width: 5rem;
+    }
+    div#social {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        margin: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    img {
+        height: 7vh;
+        width: 11vw;
+    }
+    div#content {
+        margin-bottom: 6vh;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    button#set-image {
+        display: contents;
+        height: 11vh;
+        width: 16vw;
+        FONT-WEIGHT: 600;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        margin: -1px;
+        font-size: larger;
+        font-weight: 600;
+        color: rgb(202, 197, 197);
+    }
+
+    footer img{
+        height: 4rem;
+        width: 9rem;
+        margin-bottom: 1rem;
+    }
+
+    div#social {
+        margin: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+/* Add this to your existing CSS file (style.css) */
+
+/* Style for the loading screen */
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-screen img {
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hide the loading screen once the page is loaded */
+body.loaded #loading-screen {
+    display: none;
+}
+
+
+/* Button hover animation */
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1); /* Enlarge button on hover */
+}
+
+/* Add transition for smooth page scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
